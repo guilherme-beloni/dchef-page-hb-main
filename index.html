@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dchef</title>
+    <link rel="icon" href="/public/img/icon_d.ico" type="image/x-icon" />
+    <style>
+      .whats {
+        position: fixed;
+        bottom: 15px;
+        right: 2px;
+        z-index: 9999;
+      }
+    </style>
+    <!-- Option 1: Include in HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-body-tertiary fixed-top"
+      style="z-index: 999"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand primary-color" href="#">
+          <img
+            src="/public/img/proposta_aplicações_png _Prancheta 1.png"
+            alt="Logo Dchef"
+            height="30"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#depo">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="video-background">
+      <video autoplay muted loop id="myVideo" class="d-none d-md-block">
+        <source src="/public/img/video_home.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <img src="/public/img/banner_mobile.png" alt="Mobile Image" class="d-md-none img-fluid" id="img_mobile">
+    
+      <div class="video-overlay"></div>
+      <!-- Sobreposição escura -->
+      <div class="video-content">
+        <h5>Simples de entender e completo para usar!</h5>
+       
+        <p>
+          <a
+            href="https://wa.me/5511943094789"
+            target="_blank"
+            class="btn button-color mt3"
+            >Quero contratar</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--About/compara Section-->
+
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12 ps-lg-5 mt-md-5 pt-5 pb-5">
+            <div class="about-text text-center">
+              <h3>
+                Nenhum outro sistema oferece o que o D'chef tem para você
+                vender mais!
+              </h3>
+              <p class="mt-5">
+                Compare você mesmo e entenda porque nós temos o sitema mais
+                completo para o seu negócio.
+              </p>
+              <a href="https://wa.me/5511943094789"
+              target="_blank" class="btn button-color mt-5">Quero contratar</a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 pt-5">
+            <div class="about-img text-center">
+              <img
+                src="./public/img/Prancheta 1.png"
+                alt="about_dchef"
+                class="img-fluid zoomable-image pb-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--quemUsa section-->
+    <section id="depo" class="team section-padding">
+      <div class="container">
+        <div class="row">
+          <div col-md-12>
+            <div class="section-header text-center pb-5">
+              <h2>Quem usa?</h2>
+              <p>
+                Eles aprovam o sistema D'chef! <br />
+                Abaixo estão listados alguns de nossos parceiros.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card text-center">
+              <div class="card-body" id="video_cards">
+                <iframe
+                  width="500"
+                  height="315"
+                  src="https://www.youtube.com/embed/DdhTylpmDUA?si=gFxHMK_q3XstBOQT"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <h3 class="card-title py-2">Wendell</h3>
+                <p>Presidente Prudente - SP</p>
+                <p class="socials">
+                  <a
+                    href="https://www.instagram.com/larocabarcaipira/"
+                    target="_blank"
+                    ><i class="bi bi-instagram text-dark mx-1"></i>@arocabarcaipira</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card text-center">
+              <div class="card-body" id="video_cards">
+                <iframe
+                width="500"
+                height="315"
+                  src="https://www.youtube.com/embed/Hw1vPZeDO88?si=54qtenvHeBGiyiou"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <h3 class="card-title py-2">Carlos Tuia</h3>
+                <p>Presidente Prudente - SP</p>
+
+                <p class="socials">
+                  
+
+                  <a
+                    href="https://www.instagram.com/cantodocupimprudente/"
+                    target="_blank"
+                    ><i class="bi bi-instagram text-dark mx-1"></i>@cantodocupimprudente</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 mt-3">
+            <div class="card text-center">
+              <div class="card-body" id="video_cards">
+                <iframe
+                  width="500"
+                  height="315"
+                  src="https://www.youtube.com/embed/_qaQaCyj280?si=vjvxdLUh3xdpB8vx"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <h3 class="card-title py-2">Roberto e Kazuo</h3>
+                <p>Três Lagoas - MS</p>
+                <p class="socials">
+                  <a
+                    href="https://www.instagram.com/lagoadapratatreslagoas/"
+                    target="_blank"
+                    ><i class="bi bi-instagram text-dark mx-1"></i>@lagoadapratatreslagoas</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 mt-3">
+            <div class="card text-center">
+              <div class="card-body" id="video_cards">
+                <iframe
+                width="500"
+                height="315"
+                  src="https://www.youtube.com/embed/Hw1vPZeDO88?si=54qtenvHeBGiyiou"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <h3 class="card-title py-2">João Silva</h3>
+                <p>Presidente Epitácio - SP</p>
+                <p class="socials">
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5 text-center">
+        <button class="btn btn-warning text-dark d-none">
+          Veja todos os depoimentos
+        </button>
+      </div>
+    </section>
+
+    <!--Diferenciais-->
+    <section id="portifolio" class="portifolio section-padding">
+      <div class="container">
+        <div class="row">
+          <div col-md-12>
+            <div class="section-header text-center pb-5">
+              <h2>Diferenciais</h2>
+              <h5>
+                Aqui estão listados nossos diferenciais. <br />
+                Focado 100% na área da gastronômica.  <br />
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img
+                    src="/public/img/Vermelho/icones-02.png"
+                    alt=""
+                    class="img-fluid"
+                    
+                  />
+                </div>
+                <h3 class="card-title">Suporte 24H 7/7</h3>
+                <p class="lead">
+                  Nosso suporte técnico está disponível 24 horas por dia, 7 dias
+                  por semana, garantindo assistência imediata e humanizada. Você
+                  sempre será atendido por uma equipe especializada, pronta para
+                  resolver qualquer questão sem a interação com robôs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img
+                    src="/public/img/Vermelho/icones_Prancheta 1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h3 class="card-title">Simplicidade</h3>
+                <p class="lead">
+                  Foi projetado com foco na simplicidade, permitindo que você
+                  gerencie seu estabelecimento de forma intuitiva e eficiente.
+                  Com uma interface amigável e processos simplificados, ele
+                  torna a administração do restaurante acessível e descomplicada
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img
+                    src="/public/img/Vermelho/icones-03.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h3 class="card-title">Não precisa de Internet</h3>
+                <p class="lead">
+                  Opera independentemente da internet oferece confiabilidade e
+                  acessibilidade contínua, permitindo operações ininterruptas e
+                  seguras. Essa autonomia garante que todas as funções estejam
+                  sempre disponíveis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Services-->
+
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div col-md-12>
+            <div class="section-header text-center pb-5">
+              <h2>Pacotes</h2>
+              <p>
+                
+                Transforme a gestão do seu negócio com o sistema D'chef! Conheça os planos Basic, Pro e Premium para otimizar operações, facilitar as vendas e encantar seus clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <h3 class="card-title mt-2">Basic</h3>
+                <p>Tem tudo que você precisa.</p>
+                <a
+            href="https://wa.me/5511943094789"
+            target="_blank"
+            class="btn button-color mt3"
+            >Quero contratar</a
+          ><br> <hr><br>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Sistema de Gestão
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <span class="bg-success"> RECOMENDADO </span>
+                <h3 class="card-title mt-2">Pro</h3>
+                <p>O melhor custo beneficio.</p>
+                <a
+            href="https://wa.me/5511943094789"
+            target="_blank"
+            class="btn button-color mt3"
+            >Quero contratar</a
+          ><br> <hr><br>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Sistema de Gestão
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Módulo Mobile
+                  <span class="small-text">Celulares e Tablet...</span>
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Controle de estoque
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Controle Financeiro
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Emissão fiscal (Nfc-e, Nf-e e S@T)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <h3 class="card-title mt-2">Premium</h3>
+
+                <p>Contrate e ganhe!</p>
+                <a
+            href="https://wa.me/5511943094789"
+            target="_blank"
+            class="btn button-color mt3"
+            >Quero contratar</a
+          ><br> <hr><br>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Sistema de Gestão
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Cardápio personlizado
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Leitor de código de barras
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Balança integrada
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Impressão automática na cozinha
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Módulo Mobile
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Relatórios
+                </p>
+                <p class="lead">
+                  <i class="bi bi-check"></i>Integrações
+                  <span class="small-text">Ifood e outras plataformas...</span>
+                  
+                </p>
+                <p class="lead">
+                  <i class="bi bi-gift p-2"></i>Cardápio digital Grátis
+                  </i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer id="contact" class="footer bg-dark text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 dropdown">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Links ùteis
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://github.com/ElginDeveloperCommunity/Impressoras/blob/master/Impressoras%20N%C3%A3o%20Fiscais/Elgin/i9/Drivers/ELGIN%20i9%20Printer%20Driver_v-1.7.3.exe.zip" target="_blank">Driver impressora Elgin I9</a></li>
+              <li><a class="dropdown-item" href="#">Driver impressora Elgin i8</a> </li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Driver SAT Tanca TS-1000 </a> </li>
+              <li><a class="dropdown-item" href="#">Driver SAT Elgin Smart SAT</a> </li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Plataforma de Ensino</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Redes Sociais</h5>
+            <!-- Adicione ícones de redes sociais aqui -->
+            <ul class="list-unstyled social-media">
+              <li class="d-inline-block"><a href="https://www.facebook.com/developdchef" target="_blank"><i class="bi bi-facebook"></i> </a></li>
+              <li class="d-inline-block"><a href="https://www.linkedin.com/company/develop-ti/" target="_blank"><i class="bi bi-linkedin"></i> </a></li>
+              <li class="d-inline-block"><a href="https://www.instagram.com/dchefsistema/" target="_blank"><i class="bi bi-instagram text-decoration-none"></i> </a></li>
+              <!-- Adicione outras redes sociais conforme necessário -->
+            </ul>
+          </div>
+          
+          
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col text-center">
+            <!-- Adicione o logo aqui -->
+            <img src="/public/img/proposta_aplicações_png _Prancheta 1.png" alt="Logo" height="20">
+            <p class="mt-3">&copy; 2024 D'chef | Desenvolvido por <a>RAISE</a></p>
+            <p>M.A.S.Guimaraes software EIRELI 23.205.812/0001-05, R Amelie Budet, 255 Presidente Prudente.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="whats">
+      <a href="https://wa.me/55119430977489" target="_blank">
+        <img
+          src="/public/img/whatsbtn.png"
+          width="75"
+          alt="Fale conesco pelo whatsapp"
+        />
+      </a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
